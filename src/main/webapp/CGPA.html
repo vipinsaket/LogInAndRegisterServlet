@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+  
+
+   <div class="container">
+    <h2>CGPA Calculator</h2>
+    <form id="cgpaForm"  action="Cgpa" method="POST">
+        <label>Enter CGPA for each semester:</label>
+        <br>
+       
+        <input type="number"  id="sem1" name="sem1" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 1 CGPA" required><br>
+        <input type="number"  id="sem2" name="sem2" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 2 CGPA" required><br>
+        <input type="number"  id="sem3" name="sem3" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 3 CGPA" required><br>
+        <input type="number"  id="sem4" name="sem4" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 4 CGPA" required><br>
+        <input type="number"  id="sem5" name="sem5" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 5 CGPA" required><br>
+        <input type="number"  id="sem6" name="sem6" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 6 CGPA" required><br>
+        <input type="number"  id="sem7" name="sem7" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 7 CGPA" required><br>
+        <input type="number"  id="sem8" name="sem8" step="0.01" min="0" max="10" id="sem1" placeholder="Semester 8 CGPA" required><br>
+        <button type="submit" >Submit</button>
+    </form>
+    <h3 id="result"></h3>
+</div>
+
+</body>
+</html>
